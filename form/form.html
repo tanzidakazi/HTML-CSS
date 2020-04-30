@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<link rel= "stylesheet" href="form.css">
+</head>
+
+<body>
+<h2>Fill in your details in the Form</h2>
+<div class="container">
+<form name="myForm" >
+<fieldset>
+<legend>Personal Information:</legend>
+
+<div class="row">
+	<div class="col-25">
+		<label for="fname">First name:</label>
+	</div>
+
+	<div class="col-25">
+		<input type="text" id="fname" name= "fn" placeholder="Your first name" autofocus> 
+	</div>
+
+	<div class="col-25">
+		<label for="lname">Last name:</label> 
+	</div>
+
+	<div class="col-25">
+		<input type="text" id="lname" name= "ln" placeholder="Your last name">
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-25">
+		<label for="gender">Gender:<label>
+	</div>
+
+	<div class="col-25">
+		<input type="radio" id="male-gen" name="gen" value= "male">Male
+	</div>
+
+	<div class="col-50">
+		<input type ="radio" id ="female-gen" name= "gen" value="female">Female
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-25">
+		<label for="email">Email:</label>
+	</div>
+	<div class="col-75">
+		<input type="email" id="email" name="email" placeholder="@gmail.com">
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-25">
+		<label for="pw">Password:<label>
+	</div>
+	<div class="col-75">
+		<input type= "password" name="pw">
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-25">
+		<label>	Birthdate:</label>
+	</div>
+	<div class="col-75">
+		<input type="date" name="bdate" size="50">
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-25">
+		<label>Work Experience: </label>
+	</div>
+	<div class="col-25">
+		Join date<input type="date" name="joindate">
+	</div>
+	<div class="col-50">
+		End date<input type="date" name="enddate">
+	</div>
+</div>
+
+<div>
+	<div class="col-25">
+		<label>Career choice: </label>
+	</div>
+	<div class="col-75">	
+		<select id="career" name= "career">
+		<option value= "programmer">Programmer</option>
+		<option value= "makeupartist">Makeup Artist</option>
+		<option value= "engineer">Engineer</option>
+		<option value= "doctor">Doctor</option>
+		<option value= "lawyer">Lawyer</option>
+		</select>
+	</div>
+</div>
+
+<div class='row'>
+	<div class="col-25">
+		<label>Language you speak:</label>
+	</div>
+	<div class="col-75">
+		<input type="checkbox" name="lan1" value="english">English
+
+		<input type="checkbox" name="lan2" value="german">German
+
+		<input type="checkbox" name="lan3" value="french">French
+
+		<input type="checkbox" name="lan4" value="bangla">Bangla
+
+		<input type="checkbox" name="lan5" value="arabic">Arabic
+	</div>
+</div>
+
+<div class="row">
+	<div class= "col-25">
+		<label>Select your favorite color:</label>
+	</div>
+	<div class="col-75">
+		<input type="color" name="favcol" value="white">
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-25">
+		<label>Add CV: </label>
+	</div>
+	<div class="col-75">
+		<input type="file" name="myfile" multiple>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-25">
+		<label>Comments:</label>
+	</div>
+	<div class="col-75">
+		<textarea name="message" rows="5" cols= "50"> </textarea>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-50">
+		<input type="submit" onclick="alert('Maintenance')" value="Back">
+	</div>
+	<div class="col-50">
+		<input type="submit" value= "submit">
+	</div>
+</div>
+
+</fieldset>
+</form>
+</div>
+
+</body>
+</html>
